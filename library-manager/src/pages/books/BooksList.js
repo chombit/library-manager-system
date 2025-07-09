@@ -1,7 +1,7 @@
 // src/pages/books/BooksList.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../styles/books.css';
+import '../../../styles/books.css';
 import { useNavigate } from 'react-router-dom';
 
 const BooksList = () => {
