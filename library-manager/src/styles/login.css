@@ -1,0 +1,125 @@
+/* login.css */
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0e7ff 0%, #f5f5f5 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.95);
+  padding: 2.5rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 72, 100, 0.18);
+  width: 100%;
+  max-width: 380px;
+  backdrop-filter: blur(2px);
+  border: 1px solid #e0e7ff;
+  transition: box-shadow 0.3s;
+}
+
+.login-form:hover {
+  box-shadow: 0 12px 40px rgba(60, 72, 100, 0.22);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #22223b;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+  position: relative; /* Added for absolute positioning of icon */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem 2.5rem 0.75rem 0.75rem; /* Increased right padding for icon */
+  border: 1.5px solid #c7d2fe;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #f8fafc;
+  transition: border-color 0.2s;
+  outline: none;
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.form-group input:focus {
+  border-color: #6366f1;
+  background: #fff;
+}
+
+/* Optional: Style the eye icon for better alignment */
+.form-group span {
+  position: absolute;
+  right: 20px;
+  top: 75%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  user-select: none;
+  color: #6366f1;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 0.85rem;
+  background: linear-gradient(90deg, #6366f1 0%, #2563eb 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+  transition: background 0.3s, transform 0.15s;
+  letter-spacing: 0.5px;
+}
+
+button[type="submit"]:hover {
+  background: linear-gradient(90deg, #2563eb 0%, #6366f1 100%);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.error {
+  color: #e11d48;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  background: #fef2f2;
+  border-radius: 4px;
+  padding: 0.5rem 0;
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 1.5rem 0.5rem;
+    max-width: 98vw;
+  }
+}
